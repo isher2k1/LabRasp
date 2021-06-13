@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<agency>
+    <category code="1" name="Sport">
+        <item author="Neuner Magdalena" headline="Mourinho to head Italian Roma" id="34"/>
+        <item author="Neuner Magdalena" headline="Ducati Desmosedici GP21" id="21"/>
+    </category>
+    <category code="2" name="Technology">
+        <item author="Xtoman" headline="Apple Watch will learn to measure blood pressure, blood sugar and alcohol" id="65"/>
+        <item author="htmlacademy" headline="AMD still plans to release mobile Radeon RX 6000 before the end of June" id="56"/>
+        <item author="ifap" headline="Interior Ministry to pay 45 million for Truecaller clone" id="78"/>
+    </category>
+    <category code="3" name="Weather">
+        <item author="Sinoptik.ua" headline="Kiev 23C" id="43"/>
+    <item author="Sinoptik.ua" headline="Kharkiv 18C" id="1"/>
+        <item author="Sinoptik.ua" headline="Lviv" id="2"/>
+        <item author="Sinoptik.ua" headline="Dnipro" id="4"/>
+    </category>
+</agency>

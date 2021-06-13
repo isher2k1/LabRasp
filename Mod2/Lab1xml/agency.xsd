@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="agency" type="agencyType"/>
+  <xs:complexType name="item">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute  name="id" use="required" >
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:maxInclusive value="99999"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute type="xs:string" name="headline" use="required"/>
+        <xs:attribute type="xs:string" name="author" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="category">
+    <xs:sequence>
+      <xs:element type="item" name="item" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="code" use="required"/>
+    <xs:attribute type="xs:string" name="name" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="agencyType">
+    <xs:sequence>
+      <xs:element type="category" name="category" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
